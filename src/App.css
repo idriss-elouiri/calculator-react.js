@@ -1,0 +1,69 @@
+:root{
+  --primary : #d81e5b;
+  --secondry : #8c38ff;
+  --dark : #131a26;
+  --light : #eee;
+}
+.App{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  min-height: 350px;
+  width: 40%;
+  border-radius: 10px;
+}
+.output{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 0;
+  background-color: var(--dark);
+  color: #dddddd;
+}
+.output .Write-The-Process{
+  color: white;
+  font-size: 25px;
+  padding: 0 20px;
+}
+.operation{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+  color: var(--light);
+}
+.operation button{
+  width: 15%;
+  padding: 20px 0;
+  font-size: 25px;
+  background-color: transparent;
+  color: var(--light);
+  border: 0;
+  outline: 0;
+}
+.operation button:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.numbers{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(4,60px);
+  justify-content: center;
+  background-color: var(--dark);
+  border-radius: 0 0 10px 10px;
+}
+.numbers button{
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--light);
+  font-size: 25px;
+}
+.numbers button:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
